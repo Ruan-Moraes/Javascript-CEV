@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area {
+            background-color: rgb(31, 197, 31);
+            color: white;
+            width: 300px;
+            height: 300px;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        <!-- onclick="clicar()" onmouseenter="entrar()" onmouseleave="saiu() -->
+        Interaja...
+    </div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+
+        function clicar() {
+            a.innerText = 'Você clicou'
+            a.style.background = 'red' // Problema resolvido!
+        }
+
+        function entrar() {
+            a.innerText = 'Mouse está sobre a div!'
+        }
+
+        function saiu() {
+            a.innerText = 'Mouse saiu!'
+        }
+    </script>
+</body>
+
+</html>

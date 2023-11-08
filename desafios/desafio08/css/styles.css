@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+main {
+    max-width: 32rem;
+    margin: 4rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+h1 {
+    letter-spacing: 2px;
+    margin: 1rem 0;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
+
+form div:nth-child(1),
+form div:nth-child(2),
+form div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+form div:nth-child(1) label,
+form div:nth-child(2) label,
+form div:nth-child(3) label {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+form div:nth-child(1) input,
+form div:nth-child(2) input,
+form div:nth-child(3) input {
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    border: none;
+    border: 1px solid black;
+    outline: none;
+}
+
+form div:nth-child(4) input[type="submit"] {
+    padding: 0.5rem 2rem;
+    font-size: 1.25rem;
+    border: none;
+    border: 1px solid black;
+    transition: 0.2s;
+}
+
+form div:nth-child(4) input[type="submit"]:hover {
+    background-color: #fff;
+}
+
+
+#res p {
+    padding: 1rem;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    text-align: center;
+    border-top: 4px solid black;
+}

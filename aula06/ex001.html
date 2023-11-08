@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(100, 100, 210);
+            color: white;
+            font: normal 10pt Arial;
+        }
+
+        h1 {
+            color: rgb(255, 255, 175)
+        }
+
+        /* Isso é um comentário em CSS */
+    </style>
+</head>
+
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Me livrei da maldição!</p>
+    <!-- Isso é um comentário em HTML -->
+    <script>
+        var nome = window.prompt("Qual é seu nome!") // Vai perguntar o nome
+        window.alert("Seja bem-vindo, " + nome + "!")
+        /* Isso é um comentário em múltiplas linhas em JS (O mesmo em CSS) */
+        var n1 = parseInt(prompt("Digite um número: ")) // prompt recebe somente string!
+        var n2 = parseFloat(prompt("Digite outro número: "))
+        var s = n1 + n2
+        alert("A soma entre " + String(n1) + " e " + String(n2) + " é: " + (s).toString() + "!")  // Usa concatenação
+        alert(`A soma entre ${String(n1)} e ${String(n2)} é: ${(s).toString()}!`) // Template string
+        // (number + number) para adição
+        // (string + string) para concatenção
+
+        /*  Trasformar string em number:
+           
+                Number.parseInt(var) - Transformar em number inteiro. 
+                Number.parseFloat(var) - Transformar em number real.
+                Number(var) - Transformar em number/ JS vai decide se é inteiro ou real.  
+            
+           --------------------------------------------------------------------------------------------
+           
+            Trasformar number em string:
+           
+                String(var) - Transformar number em string 
+                (var).ToString() - Transformar number em string  
+        */
+
+        var text = "Javascript"
+        var textlength = text.length
+        alert(`A palavra ${text} possui ${textlength} letras!`)
+        document.writeln(`<p>A palavra em letras MAIÚSCULAS fica assim: ${text.toUpperCase()}</p>`) // Atributo
+        document.write(`<p>A palavra em letras minúsculas fica assim: ${text.toLowerCase()}</p>`) // Atributo
+
+        // Formatando números
+        var n1 = 1450.5
+        alert(`O valor n1 é ${n1.toFixed(2)}`) // Números de casas decimais.
+        alert(`O valor n1 é ${n1.toFixed(2).replace(".", ",")}`) // Números de casas decimais e efetua a troca de caracteres, neste caso "." para ",".
+        document.writeln(`<p>O valor n1 é ${n1.toLocaleString("pt-br", {style: "currency", currency: "BRL"})}</p>`) // Transforma um número em uma moeda
+        document.write(`<p>O valor n1 é ${n1.toLocaleString("pt-br", {style: "currency", currency: "USD"})}</p>`)
+    </script>
+</body>
+
+</html>

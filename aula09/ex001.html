@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em Javascript</p>
+    <div id="msg">Clique em mim</div>
+    <div id="msg2">Texto alterado</div>
+    <div name="msg">Texto alterado</div>
+    <a href="#" class="link">Teste</a>
+    <a href="#" class="link">Teste</a>
+    <a href="#" class="link">Teste</a>
+    <a href="#" class="link">Teste</a>
+    <script>
+        var corpo = window.document.body
+        corpo.style.background = "chocolate"
+        window.document.write("Olá, mundo<br>")
+        window.document.write(window.document.charset)
+        window.document.write("<br>" + window.navigator.appName)
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = "red"
+        window.document.write("<br> O primeiro paragráfo está escrito assim: " + p1.innerText)
+        var p2 = window.document.getElementsByTagName('p')[1]
+        document.write("<br>" + p2.innerText)
+        document.write("<br>" + p2.innerHTML)
+        alert(p2.innerText)
+        alert(p2.innerHTML)
+        var msg = document.getElementById('msg')
+        msg.style.backgroundColor = "#ab1599"
+        alert(msg.innerText)
+        var msg2 = document.getElementById('msg2')
+        msg2.style.backgroundColor = "#1599ab"
+        msg2.innerText = 'Lorem ipsum'
+        // window.document.getElementById('msg2').innerText = "Olá, mundo"
+        var namemsg = document.getElementsByName('msg')[0].innerText = 'Olá, arroz'
+        var links = document.getElementsByClassName('link').innerText = 'Links' // Não está funcionando
+        var linksquery = document.querySelector('a.link')
+        linksquery.style.backgroundColor = 'red'
+    </script>
+</body>
+</html>

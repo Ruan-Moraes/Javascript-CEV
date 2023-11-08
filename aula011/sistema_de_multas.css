@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+h1 {
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+
+.form {
+    display: flex;
+    border: 1px solid black
+}
+
+.form input {
+    padding: .5rem;
+    font-size: 1.25rem;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+.form #velocidade {
+    height: 3rem;
+    width: 14rem;
+}
+
+.form #multar {
+    height: 3rem;
+    width: 8rem;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#linha {
+    width: 100%;
+    border: 1px solid rgb(160, 120, 255);
+}
+
+#Container__Resultado {
+    margin-top: .5rem;
+    font-size: 1.25rem;
+    text-align: center;
+    letter-spacing: 2px;
+}

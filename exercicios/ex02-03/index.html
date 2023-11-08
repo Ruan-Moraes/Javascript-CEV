@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/script.js" defer></script>
+        <title>Verificador de idade</title>
+    </head>
+    <body>
+        <header>
+            <h1>Verificador de Idade</h1>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <form>
+                        <div id="nasc">
+                            <label for="anoNasc">Ano de Nascimento:</label>
+                            <input type="number" name="anoNasc" id="anoNasc" />
+                        </div>
+                        <div id="sexo">
+                            <p>Sexo:</p>
+                            <div>
+                                <input
+                                    type="radio"
+                                    name="sexo"
+                                    id="sexoM"
+                                    value="masculino"
+                                />
+                                <label for="sexoM">Masculino</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="radio"
+                                    name="sexo"
+                                    id="sexoF"
+                                    value="feminino"
+                                />
+                                <label for="sexoF">Feminino</label>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="button" id="verificar" value="Verificar" />
+                        </div>
+                        <hr />
+                    </form>
+                </div>
+                <div>
+                    <p id="resposta"></p>
+                    <img src="img/pexels-pixabay-356079.jpg" alt="Quem é?" />
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; CursoemVídeo</p>
+        </footer>
+    </body>
+</html>

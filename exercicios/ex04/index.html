@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/script.js" defer></script>
+        <title>Contador</title>
+    </head>
+    <body>
+        <header>
+            <h1>Contador</h1>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <form>
+                        <div class="Container">
+                            <div id="Container__Inicio">
+                                <label for="Inicio__Input">Inicio</label>
+                                <input
+                                    type="number"
+                                    name="Inicio__Input"
+                                    id="Inicio__Input"
+                                />
+                            </div>
+                            <div id="Container__Fim">
+                                <label for="Fim__Input">Fim</label>
+                                <input
+                                    type="number"
+                                    name="Fim__Input"
+                                    id="Fim__Input"
+                                />
+                            </div>
+                            <div id="Container__Passo">
+                                <label for="Passo__Input">Passo</label>
+                                <input
+                                    type="number"
+                                    name="Passo__Input"
+                                    id="Passo__Input"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <input type="button" id="contar" value="Contar" />
+                        </div>
+                        <hr />
+                    </form>
+                </div>
+                <div>
+                    <p id="resposta"></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; CursoemVídeo</p>
+        </footer>
+    </body>
+</html>

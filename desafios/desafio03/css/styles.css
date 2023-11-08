@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 1rem;
+    letter-spacing: 2px;
+}
+
+button {
+    padding: 1rem .5rem;
+    border: none;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
+button:active {
+    background-color: gray;
+    color: rgb(0, 255, 150);
+    text-shadow: 1px 1px 4px black;
+}
