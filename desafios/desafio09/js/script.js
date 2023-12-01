@@ -1,8 +1,8 @@
 let input = document
     .querySelector('input[type="submit"]')
-    .addEventListener('click', CalcD)
+    .addEventListener('click', Increase)
 
-function CalcD() {
+function Increase() {
     event.preventDefault()
 
     let name = document.querySelector('#name').value

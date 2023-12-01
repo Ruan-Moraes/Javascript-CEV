@@ -36,23 +36,18 @@ form {
 }
 
 form div:nth-child(1),
-form div:nth-child(2),
-form div:nth-child(3) {
+form div:nth-child(2) {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
 }
 
-form div:nth-child(1) label,
-form div:nth-child(2) label,
-form div:nth-child(3) label {
+form div:nth-child(1) label {
     font-size: 1.25rem;
     font-weight: 700;
 }
 
-form div:nth-child(1) input,
-form div:nth-child(2) input,
-form div:nth-child(3) input {
+form div:nth-child(1) input {
     padding: 0.25rem;
     font-size: 1.25rem;
     border: none;
@@ -60,7 +55,7 @@ form div:nth-child(3) input {
     outline: none;
 }
 
-form div:nth-child(4) input[type="submit"] {
+form div:nth-child(2) input[type='submit'] {
     padding: 0.5rem 2rem;
     font-size: 1.25rem;
     border: none;
@@ -68,15 +63,15 @@ form div:nth-child(4) input[type="submit"] {
     transition: 0.2s;
 }
 
-form div:nth-child(4) input[type="submit"]:hover {
+form div:nth-child(2) input[type='submit']:hover {
     background-color: #fff;
 }
 
-
 #res p {
+    display: block;
     padding: 1rem;
-    font-size: 1.20rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
-    text-align: left;
+    text-align: center;
     border-top: 4px solid black;
 }

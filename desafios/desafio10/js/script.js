@@ -1,8 +1,8 @@
 let input = document
     .querySelector('input[type="submit"]')
-    .addEventListener('click', CalcD)
+    .addEventListener('click', Bhaskara)
 
-function CalcD() {
+function Bhaskara() {
     event.preventDefault()
 
     let a = Number(document.querySelector('#a').value)

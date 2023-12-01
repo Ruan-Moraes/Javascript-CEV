@@ -1,31 +1,23 @@
 let input = document
     .querySelector('input[type="submit"]')
-    .addEventListener('click', CalcD)
+    .addEventListener('click', isBissext)
 
-function CalcD() {
+function isBissext() {
     event.preventDefault()
 
-    let a = Number(document.querySelector('#a').value)
-    let b = Number(document.querySelector('#b').value)
-    let c = Number(document.querySelector('#c').value)
+    let year = Number(document.querySelector('#year').value)
 
-    // Não é 100% precisa!
-
-    if (Math.sign(a) == -1 || Math.sign(c) == -1) {
-        var Δ = b ** 2 + Math.abs(4) * a * Math.abs(c)
+    if (year % 4 == 0) {
+        let $res = document.createTextNode(`O ano ${year} é um ano bissexto!`)
+        let res = document.createElement('p')
+        res.appendChild($res)
+        let resD = document.querySelector('#res').appendChild(res)
     } else {
-        var Δ = b ** 2 - 4 * a * Math.abs(c)
+        let $res = document.createTextNode(
+            `O ano ${year} não é um ano bissexto!`
+        )
+        let res = document.createElement('p')
+        res.appendChild($res)
+        let resD = document.querySelector('#res').appendChild(res)
     }
-
-    // Caso fosse continuar a conta
-    // let bhaskara = (-b + Math.sqrt(Δ)) / (2 * a)
-    // let $bhaskara = (-b - Math.sqrt(Δ)) / (2 * a)
-    // console.log(bhaskara)
-    // console.log($bhaskara)
-
-    let res = document.createElement('p')
-    res.innerHTML = `A equação atual é: <strong>${a}x<sup>2</sup> + ${b}x + ${c} = 0</strong> <br>
-    O cálculo realizado será: <strong>Δ = ${b}<sup>2</sup> - 4 . ${a} . ${c}</strong> <br>
-    O valor calculado foi: <strong>Δ = ${Δ}</strong>`
-    let $res = document.querySelector('#res').appendChild(res)
 }
